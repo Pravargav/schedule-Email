@@ -229,6 +229,10 @@ app.post('/api/sequences', async (req, res) => {
   }
 });
 
+app.get('/', (req, res) => {
+  res.send('Email Scheduler API is running!');
+});
+
 app.get('/api/sequences', async (req, res) => {
   try {
     const sequences = await Sequence.find();
