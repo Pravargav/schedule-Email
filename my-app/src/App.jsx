@@ -327,7 +327,7 @@ export default function App() {
       setIsSaving(true);
 
       const response = await axios.post(
-        `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/sequences`,
+        "https://schedule-email-zeta.vercel.app/api/sequences",
         flowData,
         {
           headers: {
