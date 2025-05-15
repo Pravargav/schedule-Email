@@ -13,12 +13,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Middleware
-app.use(cors({
-  origin: ['https://schedule-email-fhu7.vercel.app'], // or any other allowed origins
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true
-}));
-
+app.use(cors());
 app.use(bodyParser.json());
 
 // MongoDB Connection
